@@ -28,9 +28,10 @@
             </li>
           </ul>
         </div>
-        <a href="/account/login" class="header-btn">{{ $t('login') }}</a>
+        <a href="/account/login" class="header-btn header-btn-signup">{{ $t('login') }}</a>
+        <a href="/account/register" class="header-btn">{{ $t('register') }}</a>
         <div class="header__menu" @click.stop="togglePageMenu">
-          <div class="burger">
+          <div class="burger" :style="{ backgroundColor: scrl ? '#6352CD' : 'transparent' }">
             <img src="/img/burger.svg" />
             <!-- <span class="burger__text">{{ $t('menu') }}</span> -->
           </div>
@@ -208,20 +209,21 @@ export default {
   display: block;
 }
 .header-btn {
-  width: 102px;
+  width: 96px;
   height: 46px;
   border: 1px solid #483D89;
-  border-radius: 5px;
+  border-radius: 2px;
   text-align: center;
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 52px;
+  margin-left: 10px;
+  border-radius: 55px;
 }
 .header__language {
   position: relative;
-  display: none !important;
+  display: flex !important;
 }
 .header__language-current {
   width: 102px;
@@ -230,17 +232,17 @@ export default {
   border-radius: 5px;
   text-align: center;
   color: #fff;
-  display: flex;
+  display: none; //lang menu showing
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
 }
 .burger {
-  margin-left: 20px;
-  width: 130px;
+  margin-left: 5px;
+  width: 35px;
   height: 46px;
   background: #6352CD;
-  border-radius: 5px;
+  border-radius: 0px;
   color: #fff;
   display: flex;
   align-items: center;
@@ -291,6 +293,7 @@ export default {
     position: relative;
     top: -1px;
     width: 70px;
+    border-radius: 55px;
   }
   .burger {
     width: 40px;
@@ -309,6 +312,9 @@ export default {
   .header-btn {
     color: #000;
     margin-left: 0;
+  }
+  .header-btn-signup {
+    border-radius: 5px; // Измените значение по своему вкусу
   }
   .header__etc {
     padding-top: 0;
