@@ -4,12 +4,13 @@
       <div class="footer-content-wrapper">
         <div class="footer-copy">
           <div class="copyright">
-            {{ new Date().getFullYear() }} © {{ this.$config.axios.title }} Exchange Crypto Investment Platform
+            {{ new Date().getFullYear() }} © {{ this.$config.axios.title }} Exchange Platform
           </div>
-          <div class="rights !mb-2">{{$t('built_by')}}</div>
+          <!-- <div class="rights !mb-2">{{$t('built_by')}}</div> -->
+          <div class="rights !mb-2"></div>
           <div class="rights">All Rights Reserved</div>
           <div class="footer__socials-container">
-        <!--    <a
+    <!--       <a
               v-if="this.$config.axios.facebook && this.$config.axios.facebook !== ''"
               class="footer__social-item"
               :href="`https://facebook.com/${this.$config.axios.facebook}`"

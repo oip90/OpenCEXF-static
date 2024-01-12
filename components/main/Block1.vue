@@ -3,13 +3,15 @@
     <div class="content">
       <div class="grid grid-cols-2 block1">
         <div class="block1-left">
-          <h1>Start Your Crypto Business</h1>
-          <p class="block-text">Trade crypto in the easiest and safest way!</p>
+          <h1>Start Your Way to Trade Crypto</h1>
+        <!--  <p class="block-text">Trade crypto in the easiest and safest way!</p> 
+          <p class="block-text">Your Way to Trade Crypto!</p> -->
           <div class="course">
             <img src="/img/btc.svg" class="inline-block" />
-            <span>BTC Price: {{ course.toFixed(2) }} USDT</span>
+            <span>Price: {{ course.toFixed(2) }} USDT</span>
           </div>
-          <a class="btn" href="/account/trade/BTC-USDT">Trade Bitcoin Now</a>
+        <!--  <a class="btn" href="/account/trade/BTC-USDT">Trade Bitcoin Now</a> -->
+          <a class="btn" href="/account/login">Login Now</a>
         </div>
         <div class="block1-right">
           <img src="/img/top.png" />
@@ -25,31 +27,33 @@ export default {
 </script>
 <style>
 .main-top-wrapper {
-  background: #292256;
+  background: #FFF;
   position: relative;
-  padding: 157px 0 88px;
+/* <!-- padding: 157px 0 88px; --> */
+  padding: 57px 0 88px;
 }
 body h1 {
-  color: #fff;
-  padding-bottom: 29px;
+  color: #000;
+  padding-bottom: 10px;
   font-size: 60px;
   font-weight: 700;
   line-height: 64px;
 }
 .block-text {
   font-size: 24px;
-  color: #FFF;
+  color: #000;
   padding-bottom: 29px;
 }
 .block1-left {
-  padding-top: 100px;
+  padding-top: 150px;
+  color: #000;
 }
 .course {
   padding-bottom: 40px;
 }
 .course span {
   font-size: 18px;
-  color: #fff;
+  color: #000;
   position: relative;
   left: 2px;
   top: 1px;
@@ -68,11 +72,13 @@ body h1 {
     padding: 62px 0 45px;
   }
   .block1-left h1 {
+    color: #052E6B;
     padding-bottom: 12px;
     line-height: 1.4;
   }
   .block-text {
     font-size: 18px;
+    color: #000;
   }
   .course span {
     font-size: 16px;

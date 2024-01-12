@@ -29,7 +29,7 @@
           </ul>
         </div>
         <a href="/account/login" class="header-btn header-btn-signup">{{ $t('login') }}</a>
-        <a href="/account/register" class="header-btn">{{ $t('register') }}</a>
+        <a href="/account/register" class="header-btn header-btn-register">{{ $t('Register') }}</a>
         <div class="header__menu" @click.stop="togglePageMenu">
           <div class="burger" :style="{ backgroundColor: scrl ? '#6352CD' : 'transparent' }">
             <img src="/img/burger.svg" />
@@ -147,7 +147,8 @@ export default {
 
 <style scoped lang='scss'>
 .header {
-  padding-top: 37px;
+ /* padding-top: 37px; */
+  padding-top: 0; // или уберите это свойство, если хотите удалить отступ
   height: 150px;
   position: absolute;
   top: 0;
@@ -166,14 +167,14 @@ export default {
 .navigation.navigation__open {
   position: absolute;
   top: 51px;
-  right: 0;
+  left: -80px;
   display: block;
-  width: 151%;
+  width: 325%;
   background: #FFF;
   box-shadow: 0 0 2px 1px #00000040;
 }
 .navigation__item {
-  color: #000;
+  color: #052E6B;
   padding: 12px 2px;
 }
 .navigation__link img {
@@ -199,7 +200,7 @@ export default {
   background: #6053C6;
 }
 .navigation-language__link {
-  color: #FFF;
+  color: #052E6B;
   text-transform: capitalize;
   cursor: pointer;
   display: block;
@@ -211,15 +212,26 @@ export default {
 .header-btn {
   width: 96px;
   height: 46px;
-  border: 1px solid #483D89;
+/*  border: 1px solid #052E6B;  Цвет рамки */
+/*  background-color: #052E6B;  Цвет фона */
   border-radius: 2px;
   text-align: center;
-  color: #fff;
+  color: #FFF; /* Общий цвет для обеих кнопок */
   display: flex;
   align-items: center;
   justify-content: center;
   margin-left: 10px;
   border-radius: 55px;
+}
+/* Цвет текста для кнопки "Login" */
+.header-btn.header-btn-signup {
+  border: none;
+  color: #052E6B; 
+}
+.header-btn-register {
+  /* Добавьте или обновите этот блок стилей для кнопки "Register" */
+  background: #052E6B; /* Цвет фона для кнопки "Register" */
+  color: #FFF; /* Замените "blue" на желаемый синий цвет */
 }
 .header__language {
   position: relative;
@@ -228,10 +240,10 @@ export default {
 .header__language-current {
   width: 102px;
   height: 46px;
-  border: 1px solid #483D89;
+  border: 1px solid #FFF;
   border-radius: 5px;
   text-align: center;
-  color: #fff;
+  color: #052E6B;
   display: none; //lang menu showing
   align-items: center;
   justify-content: space-between;
@@ -243,7 +255,7 @@ export default {
   height: 46px;
   background: #6352CD;
   border-radius: 0px;
-  color: #fff;
+  color: #052E6B;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -279,7 +291,7 @@ export default {
     width: 100px;
   }
   .header__language-current {
-    color: #000;
+    color: #052E6B;
     height: 42px;
     border-radius: 0;
     position: relative;
@@ -287,9 +299,9 @@ export default {
     width: 70px;
   }
   .header-btn {
-    color: #000;
+    color: #052E6B;
     height: 42px;
-    border-radius: 0;
+  /*  border-radius: 0; */ //заремарил
     position: relative;
     top: -1px;
     width: 70px;
@@ -305,12 +317,12 @@ export default {
   .navigation.navigation__open {
     position: absolute;
     top: 46px;
-    right: -14px;
+    left: 140px; /* ggggg */
     display: block;
     width: 223px;
   }
   .header-btn {
-    color: #000;
+    color: #052E6B;
     margin-left: 0;
   }
   .header-btn-signup {

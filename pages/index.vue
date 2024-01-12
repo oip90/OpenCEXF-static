@@ -4,7 +4,7 @@
     <Block2 />
     <div class="trade">
       <div class="content" style="background-color: initial">
-        <h3 class="text-center trade-title">{{ $t('bitcoin_price') }}</h3>
+        <h3 class="text-center trade-title">{{ $t('bitcoin_price') }}</h3> 
         <div class="graph-wrapper">
           <div class="btc-chart" v-if="dataGraph.length" :key="dataGraph.length">
             <div class="">
