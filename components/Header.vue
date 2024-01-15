@@ -272,6 +272,9 @@ export default {
 }
 .logo-desc {
   display: inline-block;
+  padding-top: 6px;
+  height: 53px;
+  margin-left: 35px;
 }
 @media (max-width: 900px) {
   .header {
@@ -288,7 +291,8 @@ export default {
     padding-top: 8px;
   }
   .header__logo {
-    width: 100px;
+    width: 150px;
+    height: 54px;
   }
   .header__language-current {
     color: #052E6B;
