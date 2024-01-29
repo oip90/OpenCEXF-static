@@ -22,14 +22,14 @@
               <img src="/img/2.png" />
               <span>{{this.$config.axios.telegram}}</span>
             </a>
-            <a v-if="this.$config.axios.facebook" :href="`https://facebook.com/${this.$config.axios.facebook}`" class="social-fb">
+        <!--    <a v-if="this.$config.axios.facebook" :href="`https://facebook.com/${this.$config.axios.facebook}`" class="social-fb">
               <img src="/img/3.png" />
-              <span>{{this.$config.axios.facebook}}</span>
-            </a>
+              <span>{{this.$config.axios.facebook}}</span> 
+            </a> 
             <a v-if="this.$config.axios.linkedin" :href="`https://linkedin.com/company/${this.$config.axios.linkedin}`" class="social-ld">
               <img src="/img/4.png" />
               <span>{{this.$config.axios.linkedin}}</span>
-            </a>
+            </a> -->
           </div>
         </div>
       </div>

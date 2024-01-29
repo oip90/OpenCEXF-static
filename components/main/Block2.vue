@@ -45,7 +45,7 @@ body h2 {
 .block3-img {
   position: relative;
   top: -19px;
-  left: -51px;
+  left: -108px;
 }
 .block3-right {
   position: relative;

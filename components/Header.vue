@@ -167,7 +167,7 @@ export default {
 .navigation.navigation__open {
   position: absolute;
   top: 51px;
-  left: -80px;
+  left: -97px;
   display: block;
   width: 325%;
   background: #FFF;
@@ -227,6 +227,8 @@ export default {
 .header-btn.header-btn-signup {
   border: none;
   color: #052E6B; 
+  margin-right: 3px; /* Добавленное свойство для сдвига */
+  margin-left: -47px /* Измените это значение на тот размер, который вы хотите уменьшить отступ от Login */
 }
 .header-btn-register {
   /* Добавьте или обновите этот блок стилей для кнопки "Register" */
@@ -236,6 +238,7 @@ export default {
 .header__language {
   position: relative;
   display: flex !important;
+  margin-right: 10px; /* Добавленное свойство для увеличения расстояния */
 }
 .header__language-current {
   width: 102px;
@@ -244,7 +247,7 @@ export default {
   border-radius: 5px;
   text-align: center;
   color: #052E6B;
-  display: none; //lang menu showing
+  display: flex; //lang menu showing
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
