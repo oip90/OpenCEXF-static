@@ -4,7 +4,7 @@
     <Block2 />
     <div class="trade">
       <div class="content" style="background-color: initial">
-        <h3 class="text-center trade-title">{{ $t('bitcoin_price') }}</h3> 
+        <h3 class="text-center trade-title">{{ $t('bitcoin_price') }}</h3>
         <div class="graph-wrapper">
           <div class="btc-chart" v-if="dataGraph.length" :key="dataGraph.length">
             <div class="">
@@ -30,7 +30,7 @@
       </div>
     </div>
     <Block4 />
-    <Block5  v-if="false"/>
+    <Block5 />
   </div>
 </template>
 
@@ -45,8 +45,7 @@ import Block5 from '../components/main/Block5.vue'
 
 export default {
   name: "Blog",
-  components: { CurrencyList, Block1, Block2, Block4}, 
-  <!-- , Block5 }, -->
+  components: { CurrencyList, Block1, Block2, Block4, Block5 },
   head() {
     return {
       title: `${this.$config.axios.title} ${this.$t('title')}`,
