@@ -14,7 +14,7 @@
           <a class="btn" href="/account/login">Login Now</a>
         </div>
         <div class="block1-right">
-          <img src="/img/top.png" />
+          <img src="/img/top.png" class="top-image"/>
         </div>
       </div>
     </div>
@@ -64,6 +64,11 @@ body h1 {
     flex-direction: column;
     align-items: center;
   }
+  .top-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+   }
   .block1-left {
     order: 1;
     padding-top: 36px;
