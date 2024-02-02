@@ -82,5 +82,5 @@ export default {
   risks: 'Risk warning',
   price24h: 'Change 24h',
   price: 'Price',
-  built_by: "Built using OpenCEX platform by Polygant",
+  built_by: "",
 }

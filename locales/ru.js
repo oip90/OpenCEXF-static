@@ -63,7 +63,7 @@ export default {
     },
     go_back_button: 'Go back to the main page'
   },
-  instantexchange: 'Quick Exchange',
+  instantexchange: 'Быстрый обмен',
   you_give: 'You give',
   you_get: 'You get',
   min: 'Min',
