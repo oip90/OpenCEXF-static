@@ -29,7 +29,7 @@
         <CurrencyList :filteredPairs="filteredPairs" />
       </div>
     </div>
-    <Block4 />
+    <Block4 v-if="false"/>
     <Block5  v-if="false"/>
   </div>
 </template>
