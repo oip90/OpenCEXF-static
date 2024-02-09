@@ -29,7 +29,7 @@
         <CurrencyList :filteredPairs="filteredPairs" />
       </div>
     </div>
-    <Block4 v-if="false"/>
+    <Block4 />
     <Block5  v-if="false"/>
   </div>
 </template>
@@ -45,7 +45,7 @@ import Block5 from '../components/main/Block5.vue'
 
 export default {
   name: "Blog",
-  components: { CurrencyList, Block1, Block2}, 
+  components: { CurrencyList, Block1, Block2, Block4 }, 
   // Block4, Block5 },
   head() {
     return {
