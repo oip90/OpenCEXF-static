@@ -48,6 +48,11 @@ body h1 {
   padding-top: 150px;
   color: #000;
 }
+.top-image {
+  position: absolute;
+  top: 0;
+ right: 0;
+}
 .course {
   padding-bottom: 40px;
 }
@@ -64,11 +69,6 @@ body h1 {
     flex-direction: column;
     align-items: center;
   }
-  .top-image {
-    position: absolute;
-    top: 0;
-    right: 0;
-   }
   .block1-left {
     order: 1;
     padding-top: 36px;
