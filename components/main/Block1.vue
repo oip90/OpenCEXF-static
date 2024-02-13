@@ -4,13 +4,10 @@
       <div class="grid grid-cols-2 block1">
         <div class="block1-left">
           <h1>Start Your Way to Trade Crypto</h1>
-        <!--  <p class="block-text">Trade crypto in the easiest and safest way!</p> 
-          <p class="block-text">Your Way to Trade Crypto!</p> -->
           <div class="course">
             <img src="/img/btc.svg" class="inline-block" />
             <span>Price: {{ course.toFixed(2) }} USDT</span>
           </div>
-        <!--  <a class="btn" href="/account/trade/BTC-USDT">Trade Bitcoin Now</a> -->
           <a class="btn" href="/account/login">Login Now</a>
         </div>
         <div class="block1-right">
