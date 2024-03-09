@@ -46,9 +46,7 @@ body h1 {
   color: #000;
 }
 .top-image {
-  position: absolute;
-  top: 0;
- right: 0;
+  margin-left: auto;
 }
 .course {
   padding-bottom: 40px;
